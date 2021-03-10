@@ -1,3 +1,21 @@
+// Acitve Navbar item
+var navItems = document.querySelectorAll(".header__navbar-item");
+for( let navItem of navItems) {
+    navItem.onclick = function() {
+        
+        var activeNav = document.querySelector(".header__navbar-item--active");
+        activeNav.classList.remove("header__navbar-item--active")
+        this.classList.add("header__navbar-item--active")
+    }
+}
+
+
+
+
+
+
+
+// Slider
 $('.subnav-slider-owl.owl-carousel').owlCarousel({
     loop:false,
     rewind: true,
