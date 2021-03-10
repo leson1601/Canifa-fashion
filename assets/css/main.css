@@ -693,5 +693,153 @@ body {
 
 /* Main content */
 .main-content {
-    display: none;
+    /* display: none; */
+}
+
+.banner {
+    padding-top: 190px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
+.banner__simple-text {
+    font-size: 9rem;
+    color: #fff;
+    line-height: 1.1;
+    /* margin-bottom: 10px; */
+    font-weight: 700;
+}
+
+.banner__simple-text h3 {
+    font-size: 6rem;
+}
+
+.banner__special-text {
+    color: #fff;
+    position: relative;
+}
+
+.banner__special-number {
+    color: var(--primary-color);
+    font-size: 26rem;
+    font-weight: 600;
+    font-family: "Poiret One", cursive;
+}
+
+.banner__special-text label {
+    font-size: 3rem;
+    position: absolute;
+    top: 41%;
+    left: 33%;
+}
+
+.banner__special-text span {
+    font-size: 6rem;
+    font-family: "Poiret One", cursive;
+    color: var(--primary-color);
+    position: absolute;
+    top: 26%;
+    left: 51%;
+}
+
+.banner__special-text > a {
+    background: #fff none repeat scroll 0 0;
+    color: #333;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 27%;
+    top: 41%;
+    width: 160px;
+    transition: all 0.5s ease-out 0s;
+}
+
+.banner__special-text > a:hover {
+    background: #333 none repeat scroll 0 0;
+    color: #fff;
+    right: 25%;
+}
+
+/* Banner Ads */
+.banner-ads {
+    margin-bottom: 30px;
+}
+
+.banner-ad-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-ad__link {
+    width: 100%;
+}
+
+.banner-ad__link img {
+    width: 100%;
+}
+
+.banner-ad:hover .banner-ad__circle {
+    background: rgba(255, 194, 41, 0.5) none repeat scroll 0 0;
+    transform: scale(9.5);
+}
+
+.banner-ad:hover .banner-ad__search-icon {
+    transform: scale(2) translateX(-50px);
+}
+
+.banner-ad:hover .banner-ad__hidden-text {
+    transform: translate(0px, 0px);
+    opacity: 0.7;
+}
+
+.banner-ad__text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+.banner-ad__text h2 {
+    font-size: 6rem;
+    color: #fff;
+}
+
+.banner-ad__text h3 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.banner-ad__circle {
+    background: var(--primary-color);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 36%;
+    right: 10%;
+    transition: all 0.5s ease-out 0s;
+}
+
+.banner-ad__search-icon {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 80px;
+    position: absolute;
+    top: 36%;
+    right: 14%;
+    transition: all 0.5s ease-out 0s;
+}
+
+.banner-ad__hidden-text {
+    bottom: 40px;
+    color: #ede5d5;
+    font-size: 18px;
+    line-height: 20px;
+    max-width: 200px;
+    position: absolute;
+    right: 50px;
+    text-transform: uppercase;
+    transform: translate(250px, 0px);
+    transition: all 0.5s ease-out 0s;
 }
