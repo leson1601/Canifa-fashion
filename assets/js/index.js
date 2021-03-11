@@ -15,7 +15,7 @@ for( let navItem of navItems) {
 
 
 
-// Slider
+// Subnav Slider
 $('.subnav-slider-owl.owl-carousel').owlCarousel({
     loop:false,
     rewind: true,
@@ -26,13 +26,57 @@ $('.subnav-slider-owl.owl-carousel').owlCarousel({
     // navText : ['<i class="fas fa-arrow-circle-left"></i>','<i class="fas fa-arrow-circle-right"></i>'],
     responsive:{
         0:{
-            items:1
+            items:3
         },
         600:{
-            items:3
+            items:5
         },
         1000:{
             items:5
         }
     }
 })
+
+
+// Main Slider
+$('.main-slider-owl').owlCarousel({
+    loop:true,
+    rewind: true,
+    items: 3,
+    singleItem: true,
+    margin:10,
+    navSpeed: 1000,
+    nav: true,
+    responsiveClass:true,
+    navText: ['<i class="fas fa-arrow-circle-left"></i>', '<i class="fas fa-arrow-circle-right"></i>'],
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:false
+        },
+        1000:{
+            items:1,
+            nav:true,
+            loop:false
+        }
+    }
+})
+
+
+// Main slider navbutton transition
+var navPrev = document.querySelector('.main-slider-owl .owl-prev');
+var navNext = document.querySelector('.main-slider-owl .owl-next');
+var mainSlider = document.querySelector('.main-slider');
+mainSlider.onmouseover = function() {
+    Object.assign(navPrev.style,{opacity:"1",visibility:"visible",left:"36%"});
+    Object.assign(navNext.style,{opacity:"1",visibility:"visible",right:"36%"});
+}
+
+mainSlider.onmouseout = function() {
+    Object.assign(navPrev.style,{opacity:"0",visibility:"hidden",left:"38%"});
+    Object.assign(navNext.style,{opacity:"0",visibility:"hidden",right:"38%"});
+}
