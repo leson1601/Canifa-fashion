@@ -67,6 +67,7 @@ $('.main-slider-owl').owlCarousel({
 })
 
 
+
 // Main slider navbutton transition
 var navPrev = document.querySelector('.main-slider-owl .owl-prev');
 var navNext = document.querySelector('.main-slider-owl .owl-next');
@@ -80,3 +81,6 @@ mainSlider.onmouseout = function() {
     Object.assign(navPrev.style,{opacity:"0",visibility:"hidden",left:"38%"});
     Object.assign(navNext.style,{opacity:"0",visibility:"hidden",right:"38%"});
 }
+
+
+
