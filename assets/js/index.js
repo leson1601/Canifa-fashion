@@ -9,6 +9,7 @@ for( let navItem of navItems) {
     }
 }
 
+// Menu button for tablet and mobile
 
 
 
@@ -56,7 +57,7 @@ $('.main-slider-owl').owlCarousel({
         },
         600:{
             items:1,
-            nav:false
+            nav: true
         },
         1000:{
             items:1,
@@ -106,3 +107,4 @@ scrollBtn.onclick = function() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
