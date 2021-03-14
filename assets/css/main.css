@@ -1875,7 +1875,7 @@ body {
 }
 
 .footer-subscribe__left {
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     display: flex;
     align-items: center;
 }
