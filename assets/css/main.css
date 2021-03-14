@@ -28,6 +28,8 @@ body {
     justify-content: flex-end;
     /* flex-wrap: wrap; */
     /* align-items: flex-end; */
+    height: 100%;
+    align-items: center;
 }
 
 .header__search-category {
