@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: flex-end;
     /* flex-wrap: wrap; */
-    align-items: flex-end;
+    /* align-items: flex-end; */
 }
 
 .header__search-category {
