@@ -927,6 +927,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease-out 0s;
+    outline: none;
 }
 .owl-next {
     position: absolute;
@@ -935,6 +936,7 @@ body {
     opacity: 0;
     visibility: hidden;
     transition: all 0.5s ease-out 0s;
+    outline: none;
 }
 .owl-prev i,
 .owl-next i {
